@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="calculator">
+            <h2>calculator</h2>
+
+            <label for=""></label>
+            <input type="text" inputmode="numeric" id="display" value="0">
+            <div class="wrapper">
+                <div class="number">
+                    <button type="button" class="numbtn" onclick="showValue('1')" >1</button>
+                    <button type="button" class="numbtn" onclick="showValue('2')" >2</button>
+                    <button type="button" class="numbtn" onclick="showValue('3')" >3</button>
+                    <button type="button" class="numbtn" onclick="showValue('4')" >4</button>
+                    <button type="button" class="numbtn" onclick="showValue('5')" >5</button>
+                    <button type="button" class="numbtn" onclick="showValue('6')" >6</button>
+                    <button type="button" class="numbtn" onclick="showValue('7')" >7</button>
+                    <button type="button" class="numbtn" onclick="showValue('8')" >8</button>
+                    <button type="button" class="numbtn" onclick="showValue('9')" >9</button>
+                    <button type="button" class="numbtn" onclick="showValue('0')" >0</button>
+                    <!--maths operation  -->
+                    <button type="button" class="operbtn" onclick="showValue('/')" ><i class="fa-solid fa-divide"></i></button>
+                    <button type="button" class="operbtn" onclick="result()" ><i class="fa-solid fa-equals"></i></button>
+                </div>
+                <div class="operation">
+                    <button type="button" class="operbtn" onclick="showValue('+')" ><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" class="operbtn" onclick="showValue('-')" ><i class="fa-solid fa-minus"></i></button>
+                    <button type="button" class="operbtn" onclick="showValue('*')" ><i class="fa-solid fa-xmark"></i></button>
+                    <button type="button" class="operbtn" onclick="clearDisplay()" ><i class="fa-solid fa-c"></i></button>
+                  
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
